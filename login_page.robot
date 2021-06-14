@@ -8,7 +8,7 @@ Test Setup    Open Browser    ${LOGIN_PAGE}    chrome
 Test Teardown    Close all browsers
 
 *** Variables ***
-${LOGIN_PAGE}    https://izi-logistics-customer-master.netlify.app/login
+${LOGIN_PAGE}    *some address*
 
 *** Test Cases ***
 
