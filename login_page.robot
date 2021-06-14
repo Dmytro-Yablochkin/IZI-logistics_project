@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Tests for app functionality
+Documentation    Tests for Login page functionality
 
 Library    SeleniumLibrary
 Library    LoginPage/LoginPage.py
