@@ -8,56 +8,65 @@ class OrderPageLocators:
 
     # ------------Transportation(s)------------- #
     # Routes
-    pickup_location_input = 'css = '
-    pickup_warehouse_email_input = 'css = '
-    pickup_date_calendar = 'css = '
+    pickup_location_input = 'css = #mui-95487'
+    pickup_warehouse_email_input = 'css = #mui-51095'
+    pickup_date_field = 'css = .jss638 > div:nth-of-type(2) .MuiGrid-grid-lg-3'
 
-    delivery_location_input = 'css = '
+    pickup_start_date = 'css = .jss638 > div:nth-of-type(2) div:nth-of-type(3) > div:nth-of-type(1) > ' \
+                        'div:nth-of-type(1) > div:nth-of-type(1) input:nth-of-type(1) '
+    pickup_end_date = 'css = .jss638 > div:nth-of-type(2) div:nth-of-type(3) div:nth-of-type(2) input:nth-of-type(1)'
+
+    delivery_location_input = 'css = #mui-3684'
     delivery_warehouse_email = 'css = '
     delivery_date_calendar = 'css '
 
-    # Cargo(es)
-    full_truckload_checkbox = 'css = '
-    less_than_truckload_checkbox = 'css = '
-    cargo_id_input = 'css = '
-    product_type_input = 'css = '
-    tainted_code_input = 'css = '
-    package_input = 'css = '
-    pallet_type_input = 'css = '
-    height_input = 'css = '
-    volume_input = 'css = '
-    amount_input = 'css = '
+    delivery_start_date = 'css = .jss638 > div:nth-of-type(4) div:nth-of-type(3) > div:nth-of-type(1) > ' \
+                          'div:nth-of-type(1) > div:nth-of-type(1) input:nth-of-type(1)'
+    delivery_end_date = 'css = .jss638 > div:nth-of-type(4) div:nth-of-type(3) div:nth-of-type(2) input:nth-of-type(1)'
 
-    weight_input = 'css = '
-    weight_type_dropdown = 'css = '
-    tonnes = 'css = '
-    kilograms = 'css = '
-    grams = 'css = '
+    # Cargo(es)
+    full_truckload_checkbox = 'css = input[value="FullTrackLoad"]'
+    less_than_truckload_checkbox = 'css = input[value="PTLTrackLoad"]'
+    cargo_id_input = 'css = input[name="cargoId"]'
+    product_type_input = 'css = input[name="productType"]'
+    tainted_code_input = 'css = input[name="taintedCode"]'
+    package_input = 'css = input[name="package"]'
+    pallet_type_input = 'css = input[name="palletType"]'
+    height_input = 'css = input[name="height"]'
+    volume_input = 'css = input[name="volume"]'
+    amount_input = 'css = input[name="amount"]'
+
+    weight_input = 'css = input[name="weight"]'
+    weight_type_dropdown = 'css = #mui-component-select-weightMeasure'
+    tonnes = 'css = ul > li[data-value="t"]'
+    kilograms = 'css = ul > li[data-value="kg"]'
+    grams = 'css = ul > li[data-value="g"]'
 
     # ---------------Transport requirements-------------- #
-    vehicle_type_input = 'css = '
-    vehicle_type_dropdown = 'css = '
-    loading_type = 'css = '
+    vehicle_type_input = 'css = input[name="vehicleType"]'
+    loading_type = 'css = input[name="loadingType"]'
 
     # --------------Additional requirements-------------- #
-    adr_checkbox = 'css = '
-    corner_protect_checkbox = 'css = '
-    anti_slip_mats_checkbox = 'css = '
-    tent_checkbox = 'css = '
-    gpm_checkbox = 'css = '
+    adr_checkbox = 'css = input[name="isADR"]'
+    corner_protect_checkbox = 'css = input[name="isCargoCornerProtector"]'
+    anti_slip_mats_checkbox = 'css = input[name="isAntiSplitMats"]'
+    tent_checkbox = 'css = input[name="isTent"]'
+    gpm_checkbox = 'css = input[name="isGPM"]'
 
-    straps_dropdown = 'css = '
-    sideboards_input = 'css = '
-    additional_requirements_input = 'css = '
-    comment_for_cmr_input = 'css = '
+    straps_dropdown = 'css = input[name="strap"]'
+    sideboards_input = 'css = input[name="sideBoards"]'
+    additional_requirements_input = 'css = textarea[name="comment"]'
+    comment_for_cmr_input = 'css = textarea[name="commentCMR"]'
 
     # -----------------Save order block-------------------- #
-    order_expiration_date_input = 'css = '
+    order_expiration_date_input = 'css = input[readonly]'
 
-    target_price_input = 'css = '
-    price_dropdown = 'css = '
-    usd = 'css = '
-    eur = 'css = '
-    rub = 'css = '
+    target_price_input = 'css = input[name="price"]'
+    price_dropdown = 'css = div[id="mui-component-select-currency"]'
+    price_droplist = 'css = ul[class="MuiList-root"]'
+    usd = 'css = li[data-value="USD"]'
+    eur = 'css = li[data-value="EUR"]'
+    rub = 'css = li[data-value="RUB"]'
 
-    create_order_btn = 'css = #btn-save-order'
+    create_order_btn = 'css = button[id="btn-save-order"]'
+    publish_order_btn = 'css = button[id="btn-publish-order"]'
