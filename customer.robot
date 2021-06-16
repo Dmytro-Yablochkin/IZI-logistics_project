@@ -8,7 +8,7 @@ Test Setup    Open browser    ${LOGIN_PAGE}    chrome
 Test Teardown    Close all browsers
 
 *** Variables ***
-${LOGIN_PAGE}    https://izi-logistics-customer-master.netlify.app/login
+${LOGIN_PAGE}    *some address*
 
 *** Test Cases ***
 1. Check user can create an order name and choose responsible person using valid data
